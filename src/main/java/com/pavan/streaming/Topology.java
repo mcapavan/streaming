@@ -22,7 +22,7 @@ import com.pavan.streaming.StockDataBolt;
 
 /**
  *
- * @author hkropp
+ * @author Pavan Challa
  */
 public class Topology {
 

@@ -20,7 +20,7 @@ import com.pavan.streaming.Topology;
 
 /**
  *
- * @author hkropp
+ * @author Pavan Challa
  */
 public class StockDataBolt extends BaseBasicBolt {
 
