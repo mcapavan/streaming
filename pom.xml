@@ -28,8 +28,7 @@
 <repositories>
         <repository>
             <id>hortonworks</id>
- <!--           <url>http://repo.hortonworks.com/content/repositories/releases/</url> -->
-                <url>http://nexus-private.hortonworks.com/nexus/content/groups/public/</url>
+           <url>http://repo.hortonworks.com/content/repositories/releases/</url> 
         </repository>
     </repositories>
     <build>
@@ -262,6 +261,12 @@
             <artifactId>twitter4j-core</artifactId>
             <version>4.0.2</version>
         </dependency>
+        
+        <dependency>
+			<groupId>com.twitter</groupId>
+			<artifactId>hbc-core</artifactId> <!-- or hbc-twitter4j -->
+			<version>2.2.0</version> <!-- or whatever the latest version is -->
+		</dependency>
         
         <!-- Hive dependencies -->
         <dependency>
