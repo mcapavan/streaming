@@ -23,6 +23,10 @@ public class TwitterKafkaProducer {
 	public static void run(String consumerKey, String consumerSecret,
 			String token, String secret, String kafkaBrokerList, String twitterTopicName, String twitterTrackTerm) throws InterruptedException {
 
+//		System.out.println("consumerKey: " + consumerKey + "\n" + "consumerSecret: " + consumerSecret + "\n" + "token: " + token + "\n" + "secret: " + secret + "\n" + "kafkaBrokerList: " + kafkaBrokerList + "\n") ;
+
+		
+		
 		Properties properties = new Properties();
 //		properties.put("metadata.broker.list", "localhost:9092");
 		properties.put("metadata.broker.list", kafkaBrokerList);
