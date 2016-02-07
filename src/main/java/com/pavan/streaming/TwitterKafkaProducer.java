@@ -27,7 +27,7 @@ public class TwitterKafkaProducer {
 //		properties.put("metadata.broker.list", "localhost:9092");
 		properties.put("metadata.broker.list", kafkaBrokerList);
 		properties.put("serializer.class", "kafka.serializer.StringEncoder");
-//		properties.put("client.id","camus");
+		properties.put("client.id","camus");
 		ProducerConfig producerConfig = new ProducerConfig(properties);
 		kafka.javaapi.producer.Producer<String, String> producer = new kafka.javaapi.producer.Producer<String, String>(
 				producerConfig);
