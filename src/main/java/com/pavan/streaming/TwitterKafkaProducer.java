@@ -23,7 +23,7 @@ public class TwitterKafkaProducer {
 	public static void run(String consumerKey, String consumerSecret,
 			String token, String secret, String kafkaBrokerList, String twitterTopicName, String twitterTrackTerm) throws InterruptedException {
 
-//		System.out.println("consumerKey: " + consumerKey + "\n" + "consumerSecret: " + consumerSecret + "\n" + "token: " + token + "\n" + "secret: " + secret + "\n" + "kafkaBrokerList: " + kafkaBrokerList + "\n") ;
+		System.out.println("consumerKey: " + consumerKey + "\n" + "consumerSecret: " + consumerSecret + "\n" + "token: " + token + "\n" + "secret: " + secret + "\n" + "kafkaBrokerList: " + kafkaBrokerList + "\n") ;
 
 		
 		
@@ -62,6 +62,7 @@ public class TwitterKafkaProducer {
 				e.printStackTrace();
 			}
 			producer.send(message);
+			System.out.println(message);
 		}
 		producer.close();
 		client.stop();

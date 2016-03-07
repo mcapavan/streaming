@@ -39,7 +39,6 @@ CREATE EXTERNAL TABLE tweets (
     time_zone:STRING>,
   in_reply_to_screen_name STRING
 )
-PARTITIONED BY (datehour INT)
 ROW FORMAT SERDE 'org.openx.data.jsonserde.JsonSerDe'
 STORED AS TEXTFILE
 LOCATION '/user/root/tweets';
